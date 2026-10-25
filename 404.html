@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 · MALTO</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="https://assets.malto.icu/malto.svg" />
+    <meta name="theme-color" content="#0b0e13" />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      .not-found {
+        min-height: calc(100vh - 6rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .not-found .code {
+        font-family: var(--mono);
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin: 0 0 0.75rem;
+      }
+      .not-found h1 {
+        margin: 0 0 0.75rem;
+        font-size: 1.6rem;
+      }
+      .not-found p {
+        color: var(--text-dim);
+        margin: 0 0 1.5rem;
+      }
+      .not-found a {
+        font-family: var(--mono);
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      .not-found a:hover,
+      .not-found a:focus-visible {
+        border-color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-identity">
+        <img
+          class="site-logo"
+          src="https://assets.malto.icu/malto.svg"
+          alt="MALTO logo"
+        />
+        <span class="site-name">MALTO</span>
+      </div>
+      <button
+        id="theme-toggle"
+        class="theme-switch"
+        type="button"
+        role="switch"
+        aria-label="Switch color theme"
+        aria-checked="false"
+      >
+        <span class="theme-switch-track" aria-hidden="true">
+          <span class="theme-switch-thumb">
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </header>
+
+    <main id="main" class="not-found">
+      <p class="code">404</p>
+      <h1>Page not found</h1>
+      <p>This path doesn't resolve to anything.</p>
+      <a href="/">&larr; Back to links.malto.icu</a>
+    </main>
+
+    <script src="/assets/js/theme.js"></script>
+  </body>
+</html>

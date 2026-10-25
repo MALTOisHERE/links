@@ -1,0 +1,92 @@
+# Central content file for links.malto.icu.
+# Edit this file to add, remove, or update links, social profiles, and
+# contact details. No code or JavaScript knowledge needed, and no
+# other file needs to change.
+
+profile:
+  name: "MALTO"
+  tagline: "All of MALTO's links, in one place."
+  homeUrl: "https://malto.icu"
+  logoUrl: "https://assets.malto.icu/malto.svg"
+
+# Compact icon-only profile links shown under the name, alongside the
+# contact email icon below (if set). Leave url empty to hide an entry,
+# for example until a LinkedIn profile is ready to publish.
+#
+# `icon` is a slug from Simple Icons (https://simpleicons.org): search
+# the platform's name there, and the slug is shown right under its
+# icon. The real brand icon is fetched by that slug at runtime, so
+# adding a new platform is just these two lines, never a code change.
+# An unrecognized or missing slug falls back to a plain external-link
+# icon instead of breaking the row.
+socials:
+  - label: "GitHub"
+    icon: "github"
+    url: "https://github.com/MALTOisHERE"
+  - label: "LinkedIn"
+    icon: "linkedin"
+    url: "https://www.linkedin.com/in/mohamed-ait-ouaarab/"
+  - label: "Discord"
+    icon: "discord"
+    url: "https://discord.com/invite/3fcn8aYAzm"
+  - label: "ORCID"
+    icon: "orcid"
+    url: "https://orcid.org/0009-0002-6761-0148"
+  - label: "Buy Me a Coffee"
+    icon: "buymeacoffee"
+    url: "https://buymeacoffee.com/malto"
+
+# The main content of the page: one row per link. Enabled links are
+# shown in the order listed here; disabled ("coming soon") ones are
+# always pushed to the bottom automatically, regardless of where they
+# sit in this list. Set disabled: true and leave url empty for a
+# placeholder that shows up greyed out and isn't clickable, for links
+# you want to announce before the URL exists. `category` is an
+# optional one-line subtitle (keep it short, it's shown under the
+# name, not a description).
+links:
+  - name: "malto.icu"
+    category: "Personal website"
+    url: "https://malto.icu"
+    disabled: false
+
+  - name: "blog.malto.icu"
+    category: "Writing & research"
+    url: "https://blog.malto.icu"
+    disabled: false
+
+  - name: "github.com/MALTOisHERE"
+    category: "Code"
+    url: "https://github.com/MALTOisHERE"
+    disabled: false
+
+  - name: "SecTube"
+    category: "Security streaming platform"
+    url: "https://app.malto.icu"
+    disabled: false
+
+  - name: "Blink"
+    category: "Encrypted self-destructing links"
+    url: "https://blink.malto.icu"
+    disabled: false
+
+  - name: "Blink Pro"
+    category: "Upgrade / subscribe"
+    url: "https://pay.malto.icu"
+    disabled: false
+
+  - name: "Beszel"
+    category: "Infrastructure monitoring"
+    url: "https://monitor.malto.icu"
+    disabled: false
+
+  - name: "Research Writeups"
+    category: "Coming soon"
+    url: ""
+    disabled: true
+
+# Leave email empty to hide the contact icon entirely. The site never
+# shows a fabricated address. When set, it's rendered as a mail icon
+# alongside the socials above, not as a row in the link list.
+contact:
+  email: "contact@malto.icu"

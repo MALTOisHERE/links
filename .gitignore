@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Local env / secrets
+.env
+.env.*
+
+# Node, in case local tooling (e.g. `npx serve`) ever adds a package.json
+node_modules/
+npm-debug.log*
+
+# Scratch files
+*.tmp
+_tmp_*

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MALTO · Links</title>
+    <meta
+      name="description"
+      content="MALTO's personal link hub for offensive security projects, research, and digital presence."
+    />
+    <link rel="canonical" href="https://links.malto.icu/" />
+
+    <!-- Preload the fonts used above the fold -->
+    <link
+      rel="preload"
+      href="/assets/fonts/inter-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter-latin-700-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/jetbrains-mono-latin-600-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://assets.malto.icu/malto.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0b0e13" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MALTO · Links" />
+    <meta
+      property="og:description"
+      content="Offensive security projects, research, and digital presence."
+    />
+    <meta property="og:url" content="https://links.malto.icu/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MALTO · Links" />
+    <meta
+      name="twitter:description"
+      content="Offensive security projects, research, and digital presence."
+    />
+
+    <!--
+      Set the theme before first paint to avoid a flash of the wrong
+      theme. Falls back to the OS preference if nothing is stored.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header-identity">
+        <img
+          id="profile-logo"
+          class="site-logo"
+          src="https://assets.malto.icu/malto.svg"
+          alt="MALTO logo"
+        />
+        <div class="site-header-text">
+          <h1 class="site-name" id="profile-name">MALTO</h1>
+          <p class="site-tagline" id="profile-tagline">
+            All of MALTO's links, in one place.
+          </p>
+        </div>
+      </div>
+      <button
+        id="theme-toggle"
+        class="theme-switch"
+        type="button"
+        role="switch"
+        aria-label="Switch color theme"
+        aria-checked="false"
+      >
+        <span class="theme-switch-track" aria-hidden="true">
+          <span class="theme-switch-thumb">
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </header>
+
+    <main id="main">
+      <div class="social-section" id="social-section">
+        <p class="section-label">Find me on</p>
+        <div class="social-list" id="social-list" aria-label="Profiles"></div>
+      </div>
+
+      <section aria-label="Links">
+        <div class="link-list" id="link-list"></div>
+        <noscript>
+          <ul class="noscript-links">
+            <li><a href="https://malto.icu">malto.icu</a></li>
+            <li><a href="https://blog.malto.icu">blog.malto.icu</a></li>
+            <li>
+              <a href="https://github.com/MALTOisHERE">github.com/MALTOisHERE</a>
+            </li>
+          </ul>
+        </noscript>
+
+        <footer class="site-footer">
+          MALTO © <span id="year">2026</span>
+          <span class="site-footer-sep" aria-hidden="true">·</span>
+          <a id="footer-home-link" href="https://malto.icu">malto.icu</a>
+        </footer>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"
+      integrity="sha256-Rdw90D3AegZwWiwpibjH9wkBPwS9U4bjJ51ORH8H69c="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
