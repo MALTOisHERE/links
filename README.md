@@ -1,4 +1,4 @@
-# links.malto.icu
+# MALTO Links
 
 MALTO's personal link hub. Plain HTML, CSS, and vanilla JavaScript.
 No framework, no build step.
