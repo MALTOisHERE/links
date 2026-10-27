@@ -55,11 +55,6 @@ links:
     url: "https://blog.malto.icu"
     disabled: false
 
-  - name: "github.com/MALTOisHERE"
-    category: "Code"
-    url: "https://github.com/MALTOisHERE"
-    disabled: false
-
   - name: "SecTube"
     category: "Security streaming platform"
     url: "https://app.malto.icu"
@@ -78,7 +73,7 @@ links:
   - name: "Beszel"
     category: "Infrastructure monitoring"
     url: "https://monitor.malto.icu"
-    disabled: false
+    disabled: true
 
   - name: "Research Writeups"
     category: "Coming soon"
