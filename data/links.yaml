@@ -55,14 +55,14 @@ links:
     url: "https://blog.malto.icu"
     disabled: false
 
-  - name: "SecTube"
-    category: "Security streaming platform"
-    url: "https://app.malto.icu"
-    disabled: false
-
   - name: "Blink"
     category: "Encrypted self-destructing links"
     url: "https://blink.malto.icu"
+    disabled: false
+    
+  - name: "SecTube"
+    category: "Security streaming platform"
+    url: "https://app.malto.icu"
     disabled: false
 
   - name: "Blink Pro"
@@ -70,11 +70,11 @@ links:
     url: "https://pay.malto.icu"
     disabled: false
 
-  - name: "Beszel"
-    category: "Infrastructure monitoring"
-    url: "https://monitor.malto.icu"
-    disabled: true
-
+  - name: "Public Assets"
+    category: "R2 Object Storage"
+    url: "https://assets.malto.icu/malto.svg"
+    disabled: false
+    
   - name: "Research Writeups"
     category: "Coming soon"
     url: ""
