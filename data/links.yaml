@@ -64,7 +64,12 @@ links:
     category: "Security streaming platform"
     url: "https://app.malto.icu"
     disabled: false
-
+    
+  - name: "Decrity"
+    category: "AI interaction firewall"
+    url: "https://decrity.malto.icu"
+    disabled: false
+    
   - name: "Blink Pro"
     category: "Upgrade / subscribe"
     url: "https://pay.malto.icu"
